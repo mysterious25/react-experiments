@@ -1,0 +1,1 @@
+export const names = ['Masha', 'Oleksii', 'Timofii'];

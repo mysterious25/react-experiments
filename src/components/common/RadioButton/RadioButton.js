@@ -1,7 +1,5 @@
 import React from 'react';
 
-import Styles from './RadioButton.module.scss';
-
 function RadioButton (props) {
   const {
     onChange,
@@ -10,7 +8,7 @@ function RadioButton (props) {
   } = props;
 
   return (
-    <div className={Styles.radio}>
+    <div>
       <label>
         <input
           type="radio"

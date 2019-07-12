@@ -9,7 +9,8 @@ import {
   Headline,
   Checkbox,
   Input,
-  RadioButton
+  RadioButton,
+  ListWrapper
 } from 'components/common';
 
 
@@ -54,9 +55,17 @@ class Main extends Component {
     });
   };
 
+
+
   onRadioChange = ({ target }) => {
     this.setState({
       checkedRadio: target.value,
+    });
+  };
+
+  updateSearchValue = searchValue => {
+    this.setState({
+      searchValue: searchValue
     });
   };
 
@@ -85,11 +94,15 @@ class Main extends Component {
           <span className={Styles.error}>Error</span>
         </Button>
 
+
+
         <Headline>
 					<span>
 						children
 					</span>
         </Headline>
+
+        <ListWrapper/>
 
         <Input
           value={InputValue}
